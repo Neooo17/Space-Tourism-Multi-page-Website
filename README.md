@@ -81,6 +81,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Neooo17]()
+- Website - [Neooo17](https://github.com/Neooo17)
 - Frontend Mentor - [@Neoo17](https://www.frontendmentor.io/profile/Neooo17)
 
