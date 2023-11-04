@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(assets/crew/background-crew-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    padding-right: 0;
+    text-transform: uppercase;
+}
+.primary-navigation{
+    font-family: 'Barlow Condensed', sans-serif;
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    background-color: rgb(47, 48, 53, 0.7);
+    padding: 2rem;
+    padding-inline: clamp(3rem, 10vw, 10rem);
+    letter-spacing: 2px;
+    font-weight: 600;
+    backdrop-filter: blur(1rem);
+}
+.primary-navigation a{
+    color: white;
+    text-decoration: none;
+}
+.primary-navigation a:hover{
+    text-decoration: underline;
+}
+.mobile-nav-toggle{
+    display: none;
+  }
+
+main{
+    padding: 2rem 6rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 5.5rem;
+}
+.content h2{
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+}
+.content h3{
+    font-family: 'Bellefair', serif;
+    color: grey;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 2.5rem;
+}
+.content h1{
+    font-family: 'Bellefair', serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+.content p{
+    font-family: 'Barlow', sans-serif;
+    color: rgba(192,197,230,255);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-top: 3rem;
+}
+.btn{
+    display: flex;
+    gap: 1.2rem;
+    padding-top: 3rem;
+}
+.btn button{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+    background-color: #3F444E;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.btn button:hover{
+    transform: scale(1.2,1.2);
+}
+.img{
+    width: 450px;
+    height: 550px;
+    padding-top: 5rem;
+    margin-right: -2rem;
+}
+
+
+.crew-m2, .crew-m3, .crew-m4{
+    display: none;
+}
+
+
+
+
+
+
+@media (max-width:968px){
+    body{
+        background-image: url(assets/crew/background-crew-tablet.jpg);
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .content h3{
+        padding: 2rem;
+    }
+    .content h2{
+        border-bottom: 1px solid #383B4B;
+        padding-bottom: 1rem;
+        font-size: 1.4rem;
+    }
+    .content p{
+        width: 90%;
+        margin: auto;
+    }
+    .btn{
+        justify-content: center;
+    }
+    .img{
+        padding-top: 0;
+        margin: 0;
+    }
+      
+}
+
+
+/* Style the hamburger menu and close button */
+
+@media (max-width: 45em){
+    body{
+        background-image: url(assets/crew/background-crew-mobile.jpg);
+    }
+    .primary-navigation{
+        position: fixed;
+        inset: 0 0 0 40%;
+
+        flex-direction: column;
+        padding: 8rem 2rem;
+        gap: 2rem;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+    .primary-navigation[data-visible = "true"]{
+        transform: translateX(0%);
+    }
+
+    .mobile-nav-toggle{
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        top: 2rem;
+        right: 2rem;
+        width: 2rem;
+        aspect-ratio: 1;
+        background-image: url(assets/shared/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: 0;
+    }
+    .mobile-nav-toggle[ aria-expanded = "true"]{
+        background-image: url(assets/shared/icon-close.svg);
+    }
+
+    main{
+        padding: 0 1rem;
+        padding-top: 4rem;
+    }
+
+    .content h2{
+        font-size: 1.2rem;
+    }
+
+    .img{
+        width: 200px;
+        height: 200px;
+    }
+    
+}
