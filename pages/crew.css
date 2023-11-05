@@ -195,3 +195,10 @@ main{
     }
     
 }
+
+
+@media (min-width:35em) and (max-width:55em) {
+    .primary-navigation li a span{
+        display: none;
+    }
+}
