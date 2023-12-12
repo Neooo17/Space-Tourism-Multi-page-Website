@@ -66,7 +66,7 @@ Users should be able to:
 - Responsiveness
 
 
-### What I learned
+### What I learned-
 
 - **HTML and CSS:** Improved my HTML and CSS skills for structuring web pages and creating visually appealing designs.
 
