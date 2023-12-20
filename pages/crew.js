@@ -62,7 +62,7 @@ btn4.addEventListener("click", function(){
     btn2.style.backgroundColor = "";
     btn3.style.backgroundColor = "";
     btn1.style.backgroundColor = "";
-})
+});
 
 
 // Navigation Toggle
@@ -79,4 +79,4 @@ navToggle.addEventListener("click", () => {
         primaryNav.setAttribute("data-visible", false);
         navToggle.setAttribute("aria-expanded", false);
     }
-})
+});
